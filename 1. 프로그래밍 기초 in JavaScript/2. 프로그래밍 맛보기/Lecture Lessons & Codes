@@ -155,6 +155,29 @@ https://bakey-api.codeit.kr/files/3366/ZAQe5y?name=Untitled+3.png
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
+함수
+
+함수 선언
+->
+// 함수 선언
+function greetings() {
+    console.log('Hi');
+    console.log('안녕');
+    console.log('こんにちは');
+    console.log('你好');
+    console.log('Guten Tag');
+    console.log('Bonjour');
+    console.log('Buongiorno');
+};
+
+하수 선언은 그 함수가 사용될 때 어떻게 동작할지 정의만 하는것이다 
+
+함수호출 
+->
+//함수 호출
+greetings();
+
+
 
 
 
