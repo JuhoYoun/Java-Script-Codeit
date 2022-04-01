@@ -94,3 +94,26 @@ function introduce(name, age, nationality = "Korea"){
 }
 
 옵셔널 파라미터는 반드시 가장 뒤에 선언해줘야한다
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+변수의 scope
+
+변수에는 유효 범위가 있다 그 범위를 벗어나게 되면 오류가 발생한다 
+
+ex)
+console.log(x) -> error 변수를 선언하지 않음
+
+ex)
+function printX(){ //Block Statement 
+  let x = 3
+  console.log(x)
+}
+printX()
+console.log(x) -> 에러 x가 정의 되지 않았다
+
+JS에서 위처럼 중괄호 {} 로 감싼 코드를 Block Statement 라고 한다 우리가 지금까지 본 블락문은 함수 밖에 없는데 앞으로 몇가지 더 배우게 될거다
+기본적으로 이 블락문 안에 선언된 변수를 local variable 이라고 한다 이 local variable은 block statement 안에서만 사용할 수 있다
+변수 x의 scope 즉 유효 범위는 printX 함수 안에서만 유효하다
+
+ex)
+
