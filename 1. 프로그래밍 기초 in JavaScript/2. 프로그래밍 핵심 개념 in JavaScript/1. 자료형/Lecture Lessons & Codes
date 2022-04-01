@@ -106,8 +106,32 @@ console.log(false || false);
 let x = 3;
 console.log(x > 4 || !(x > 2));
 console.log(false);
-
 false
 false
 
 -----------------------------------------------------------------------------------------------------------------------------
+
+typeof 연산자
+
+typeof 라는 키워드 옆에 값을 입력하면 해당 자료형을 문자열로 되돌려준다
+ex) 
+console.log(typeof "true") -> string
+console.log(typeof 1) -> number JS는 정수와 소수를 따로 구분하지 않고 다 number 형이다
+console.log(typeof 1.1) -> number
+
+typeof 연산자는 변수와 함수에서도 활용가능
+ex)
+console.log(typeof name) -> string (name에 문자열이 할당되있다는 가정)
+console.log(typeof sayHello) -> function (sayHello 라는 function이 있다 하자)
+
+마지막으로 이번에는 typeof 연산자에 연산식을 넣어보도록 하자
+->
+console.log(typeof "code" + "it") -> stringit -> typeof 가 앞의 "code" 만 받아 "string" 을 반환하고 이게 "it" 이랑 합쳐진다
+console.log(typeof 1 + 2) -> NAN 이라고 뜬다 NAN 은 not a number 라는 뜻 역시 typeof 가 앞에 1만 맏어 이걸 "number" 로 반환하고 문자열을 숫자형이랑 더하려니 이런 에러가 나온다
+
+typeof 연산자는 사칙연산보다 우선순위가 높다 위의 경우에는 괄호를 사용하자
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
