@@ -77,10 +77,20 @@ return 과 cosole.log 의 차이
 
 Optional Parameter
 
-파라미터가 있는 함수에 아무 인풋도 안넣어주면? 패러미터에는 undefined 값이 들어가게 된다 
+파라미터가 있는 함수에 아무 인풋도 안넣어주면? 패러미터에는 undefined 값이 들어가게 된다 undefined 값은 변수를 패러미터에 넣어도 마찬가지이다
 ex)
 function sayHello(name){
   console.log(`${name}님 안녕!`)
 }
 
 sayHello(); -> undefined님 안녕!
+
+이런 일을 막기 위해 파라미터에 기본값을 설정할 수 있다 -> 옵셔널 파라미터
+
+function introduce(name, age, nationality = "Korea"){
+  console.log(name);
+  console.log(age);
+  console.log(nationality);
+}
+
+옵셔널 파라미터는 반드시 가장 뒤에 선언해줘야한다
