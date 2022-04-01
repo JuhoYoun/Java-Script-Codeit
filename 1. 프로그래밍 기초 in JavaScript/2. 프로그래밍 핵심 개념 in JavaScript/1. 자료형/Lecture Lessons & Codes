@@ -239,5 +239,22 @@ typeof false;
 참고링크 https://aboooks.tistory.com/9
 -------------------------------------------------------------------------------------------------------------------------------------------
 
+형 변환 (Type Conversion)
+ex) 
+String(6) -> '6'
+Number("1") -> 1
 
+일반적으로 숫자가 아닌 형태의 문자열들은 숫자형으로 형 변환 시 NAN 값이 된다 (근데 NaN 의 타입은 숫자형인듯.... )
+불린의 경우 true 는 숫자형으로 변환시 1로 면환되고 false 는 숫자형으로 변환시 0으로 변환된다 
 
+Boolean 의 경우도 더 보자 
+Boolean('문자') -> true
+Boolean(123) -> true
+
+일반적으로 어떤 값을 Boolean 으로 변환시키는 대부분 true 가 된다 
+false 가 되는 경우를 알아보자
+Boolean("") -> false 빈문자열 
+Boolean(0) -> false 숫자 0 
+Boolean(NaN) -> false Nan 인 경우 
+
+이렇게 boolean 값으로 변형했을 때 false 가 나오는것을 falsy 값이라고 한다
