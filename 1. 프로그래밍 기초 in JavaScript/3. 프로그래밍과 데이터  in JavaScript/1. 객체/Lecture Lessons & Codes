@@ -46,7 +46,15 @@ codeit.born year 이렇게 써야하는데 이럴 경우 codeit.born과 year을 
 
 대괄호 표기법
 
-ex) 
+ex) codeit['born year'] -> return 2020
+ex)
+let propertyName = "born year"
+codeit[propertyName] -> return 2020
+
+그러면 객체 안의 객체는 어떻게 접근할까? -> 프로퍼티 네임을 계속 연결하면 된다 
+
+ex) codeit.bestCourse.title -> return "JavaScript"
+ex) codeit.bestCourse['title'] -> return "JavaScript"
 
 
 
