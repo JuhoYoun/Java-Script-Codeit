@@ -96,7 +96,7 @@ undefined 불일치 비교를 해서 구할 수 있는데 이렇게 in 연산자
 
 ex)
 
-let greetings ={
+let greetings = {
   sayHello: function () {
     console.log('Hello');
   },
@@ -107,6 +107,21 @@ let greetings ={
     console.log('Bye');
   }
 }
+
+위 객체를 보면 프로퍼티 값으로 함수를 정의하고 있다 function 키워드 다음에 이름 없이 바로 소괄호와 중괄호를 열어 함수를 정의했다 함수 이름은 프로퍼티 네임이 대신해주기 때문이다 이렇게하면
+greetings 이라는 객체의 세가지 메소드가 정의된 것이다 이 메소드들을 사용하려면 -> greetings.sayHello()  이런식으로 사용하면 된다
+
+사실 함수라고 불렀던 console.log() 도 console이라는 객체의 log() 메소드였던 것이다
+
+메소드를 사용할 때 점 표기법을 많이 사용하지만 대괄호 표기법을 사용해도 상관 없다 근데 대괄호 표기법에서 함수 패러미터를 넣는 소괄호는 대괄호 뒤에 오는것을 잘 기억해라
+->
+greerings["sayHello"]();
+
+메소드는 어떤 객체의 고유한 동작으로서 함수에 의미를 부여할 수 있다
+
+
+
+
 
 
 
