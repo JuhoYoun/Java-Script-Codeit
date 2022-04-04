@@ -1,1 +1,10 @@
+if else
 
+ex)
+let temp = 1;
+
+if (temp <= =) {
+  console.log("물이 업니다")
+} else {
+  console.log("물이 안얼어요")
+}
