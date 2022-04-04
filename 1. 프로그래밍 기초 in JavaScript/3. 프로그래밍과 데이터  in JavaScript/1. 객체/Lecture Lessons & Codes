@@ -119,7 +119,14 @@ greerings["sayHello"]();
 
 메소드는 어떤 객체의 고유한 동작으로서 함수에 의미를 부여할 수 있다
 
-
+ex)
+let triangle = {
+  width : 30
+  height : 15
+  getarea: function () {
+    return triangle.width * triangle.height / 2;
+  }
+};
 
 
 
