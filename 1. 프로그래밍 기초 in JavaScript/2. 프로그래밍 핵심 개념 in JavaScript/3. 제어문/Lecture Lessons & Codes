@@ -32,11 +32,17 @@ ex)
 switch (비교할 값) {
   case 조건값1:
     동작부분;
-    break;
+    break; -> switch 문을 빠져 나오라는 뜻 
   case 조건값2:
     동작부분;
     break;
-  default:
+  case 조건값3:
+    동작부분;
+    break;
+  default: -> 비교할 값이 모든 조건값과 일치하지 않을 때 default 문은 필요여부에 따라 생략 가능하다
     동작부분;
 }
+
+근데 switch 문에서 break을 다 지우면 어떻게 될까? 다 지워 보자 여기서 꿀팁 맥사용자는 break 있는 줄을 드래그해서 command + d (윈도우는 ctrl + d) 하면 똑같은 모양으로 된 코드를 모두 선택할 수 있다
+switch 문은 조건과 일치하는 경우를 찾은 다음
 
