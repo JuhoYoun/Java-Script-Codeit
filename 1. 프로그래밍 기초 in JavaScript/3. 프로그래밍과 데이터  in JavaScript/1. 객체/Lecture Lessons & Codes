@@ -56,8 +56,9 @@ codeit[propertyName] -> return 2020
 ex) codeit.bestCourse.title -> return "JavaScript"
 ex) codeit.bestCourse['title'] -> return "JavaScript"
 
+그런데 만약 존재하지 않는 프로퍼티에 접근하려한다면?
 
-
-
+ex) codeit.teacher -> undefined 를 리턴한다 에러가 아니라 undefined를 반환한다!
+-----------------------------------------------------------------------------------------------------------------------------
 
 
