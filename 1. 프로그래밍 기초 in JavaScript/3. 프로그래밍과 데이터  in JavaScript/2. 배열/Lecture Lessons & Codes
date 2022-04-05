@@ -269,3 +269,4 @@ for ( let element of an_array ) {
   console.log(element)
 }
 
+배열도 하나의 객체이기 때문에 for in 문을 사용할 수 있긴 하다
