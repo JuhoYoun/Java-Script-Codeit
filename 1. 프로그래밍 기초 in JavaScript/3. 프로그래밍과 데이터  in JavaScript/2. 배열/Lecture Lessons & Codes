@@ -257,7 +257,11 @@ for ( i = 0; i < an_array.length; i++) {
 
 for 문과 배열의 length 프로퍼티를 사용하요 위처럼 코드를 짜보았는데 for .. of 반복문을 사용하면 더 쉽게 쓸 수 있다
 
+for ( 변수 of 배열 ) {
+  동작부분
+}
 
+for in 문과 비슷한데 for in 에서는 for 뒤의 변수에 프로퍼티 네임이 할당되고 in 뒤에 객체가 있다
 
 
 
