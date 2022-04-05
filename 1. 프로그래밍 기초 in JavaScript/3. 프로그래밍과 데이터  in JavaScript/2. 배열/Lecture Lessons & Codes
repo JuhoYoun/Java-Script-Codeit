@@ -73,3 +73,26 @@ an_array.splice(1) -> 인덱스 1과 그 이후의 모든 값들을 삭제
 console.log(an_array) -> ['Zero']
 
 splice 메소드에 두번째 패러미터를 넣어주면 삭제할 요소의 개수를 정할 수 있다
+
+let an_array = [
+  "zero",
+  "one",
+  "two",
+  "three"
+  ]
+
+an_array.splice(1,2) -> 첫번째 패러미터는 삭제를 시작할 인덱스 두번째 패러미터는 삭제할 개수이다
+console.log(an_array) -> (2) ['zero', 'three']
+
+1번 인덱스부터 2번 인덱스 까지 삭제된다
+an_array.splice(1,1) 이렇게하면 인덱스 1만 지워진다
+
+let an_array = [
+  "zero",
+  "one",
+  "two",
+  "three"
+  ]
+
+an_array.splice(0,2)
+console.log(an_array) -> (2) ['two', 'three']
