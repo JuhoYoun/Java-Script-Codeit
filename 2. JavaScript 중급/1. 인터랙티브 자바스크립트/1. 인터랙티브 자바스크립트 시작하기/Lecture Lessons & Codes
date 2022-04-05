@@ -6,4 +6,91 @@
 
 02. HTML/CSS + JavaScript 맛보기
 
+여기 html 과 css를 가지고 간단하게 만든 프로젝트가 있다 
+
+index.html
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="myNumber">0</div>
+  <div id="btns">
+    <div>
+      <button id="decrease">-</button>
+      <button id="increase">+</button>
+    </div>
+    <div>
+      <button class="color-btn red" data-color="#FF0000"></button>
+      <button class="color-btn orange" data-color="#FFA500"></button>
+      <button class="color-btn yellow" data-color="#FFFF00"></button>
+      <button class="color-btn green" data-color="#008000"></button>
+      <button class="color-btn blue" data-color="#0000FF"></button>
+      <button class="color-btn indigo" data-color="#4B0082"></button>
+      <button class="color-btn purple" data-color="#800080"></button>
+      <button class="color-btn black" data-color="#000000"></button>
+    </div>
+  </div>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>
+
+style.css
+
+#myNumber {
+  font-size: 100px;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.red { background-color: #FF0000; }
+.orange { background-color: #FFA500; }
+.yellow { background-color: #FFFF00; }
+.green { background-color: #008000; }
+.blue { background-color: #0000FF; }
+.indigo { background-color: #4B0082; }
+.purple { background-color: #800080; }
+.black { background-color: #000000; }
+
+브라우저로 어떤 페이지가 나오는지 확인해보자 정적인 페이지다
+
+이번에는 아래 index.js 파일을 추가해주고 index.html의 코멘트 부분을 풀어주자 
+그러면 동적인 페이지로 변한것을 확인할 수 있다
+
+
+index.js
+
+const myNumberTag = document.getElementById('myNumber');
+const decreaseBtn = document.getElementById('decrease');
+const increaseBtn = document.getElementById('increase');
+
+let myNumber = +myNumberTag.textContent;
+
+decreaseBtn.onclick = function() {
+  myNumber--;
+  myNumberTag.textContent = myNumber;
+};
+
+increaseBtn.onclick = function() {
+  myNumber++;
+  myNumberTag.textContent = myNumber;
+};
+
+const colorBtns = document.getElementsByClassName('color-btn');
+
+for (let btn of colorBtns) {
+  btn.onclick = function() {
+    myNumberTag.style.color = btn.dataset.color;
+  };
+}
 
