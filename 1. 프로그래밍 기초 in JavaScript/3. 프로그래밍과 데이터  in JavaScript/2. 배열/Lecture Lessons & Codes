@@ -96,3 +96,20 @@ let an_array = [
 
 an_array.splice(0,2)
 console.log(an_array) -> (2) ['two', 'three']
+
+splice 메소드의 세번째 패러미터를 이용하면 값을 추가할 수도 있다 
+
+let an_array = [
+  "zero",
+  "one",
+  "two",
+  "three"
+  ]
+
+an_array.splice(1,2, "four", "five", "six")
+console.log(an_array) -> (5) ['zero', 'four', 'five', 'six', 'three']
+
+1번 인덱스부터 두개를 삭제하고 1번 자리부터 순서대로 "four" "five" 그리고 "six"를 추가했다 뒤에 있던 "three"는 "six" 다음 인덱스로 밀리게 된다
+강의에서 세번째 패러미터라고 했는데 보기에는 세번째 네번째 다섯번째 같다 그냥 "four", "five", "six" 이 자체가 세번째 패러미터로 들어가는것 같다 물론 더 많이 넣어도 잘 추가된다 
+
+
