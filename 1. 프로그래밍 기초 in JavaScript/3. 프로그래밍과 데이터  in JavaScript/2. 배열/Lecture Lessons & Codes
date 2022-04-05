@@ -242,8 +242,20 @@ console.log(brands);
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array
 -------------------------------------------------------------------------------------------------------------------------------------
 
+for .. of 반복문 
 
+let an_array = [
+  "zero",
+  "one",
+  "two",
+  "three"
+]
 
+for ( i = 0; i < an_array.length; i++) {
+  console.log(an_array[i])
+}
+
+for 문과 배열의 length 프로퍼티를 사용하요 위처럼 코드를 짜보았는데 for .. of 반복문을 사용하면 더 쉽게 쓸 수 있다
 
 
 
