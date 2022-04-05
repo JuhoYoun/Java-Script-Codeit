@@ -414,4 +414,26 @@ console.log(course2)
 
 짜잔 그런데 위의 for 문을 이용한 방법은 너무 course1과 course2 에 한정적이다 그래서 course3 이나 course4 가 생기면 또 for문을 작성해야한다
 
+function clone(object) {
+  let temp = {}
+  
+  for (let key in object) {
+    temp[key] = object[key]
+  }
+  return temp
+}
+
+let course1 = {
+  title: "파이썬",
+  language: "Python"
+}
+
+let course2 = clone(course1)
+
+course2.title = "알고리즘"
+
+console.log(course1)
+console.log(course2)
+
+위처럼 함수를 만들면 더 효율적이게 복사를 할 수 있다 그런데 여기도 한가지 주의할 점이 있는데 다음의 코드를 보자
 
