@@ -359,7 +359,7 @@ Date.now() 메소드는 이 메소드가 호출된 시점의 타임스탬프를 
 
 let myDate = new Date();
 
-console.log(Date.now() === myDate.getTime()); // true
+console.log(Date.now() === myDate.getTime()); // true   -> 이거는 같지는 myDate 을 만들고 Date.now() 를 호출한 시간이 밀리 세컨 단위에서는 같아서 true라고 뜬듯
 
 위 코드를 보시면 알 수 있듯이 새로운 객체를 만들어서 getTime 메소드를 호출한 값과 일치한다는 사실을 확인할 수 있는데요.
 새로운 객체를 만들지 않는다는 점은 일단 우리 눈에 코드 한 줄을 줄일 수 있다는 이점도 있고, 눈에는 드러나지 않지만 코드가 실행될 때 메모리의 부담을 줄여주기도 합니다.
