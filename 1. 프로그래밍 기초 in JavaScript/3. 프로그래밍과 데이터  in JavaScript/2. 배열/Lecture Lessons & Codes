@@ -164,6 +164,21 @@ ex) array.push("Bye")
 
 이렇게 배열의 양 끝을 다뤄야할 때는 splice 보다 위의 메소드들이 유용할 수 있다
 
+let an_array = [
+  "zero",
+  "one",
+  "two",
+  "three"
+  ]
 
+  an_array.unshift("Hi", "Hello")
+  console.log(an_array) -> (6) ['Hi', 'Hello', 'zero', 'one', 'two', 'three']
+  an_array.push("Bye", "Good Bye")
+  console.log(an_array)  -> (8) ['Hi', 'Hello', 'zero', 'one', 'two', 'three', 'Bye', 'Good Bye']
+  an_array.shift()
+  console.log(an_array)  -> (7) ['Hello', 'zero', 'one', 'two', 'three', 'Bye', 'Good Bye']
+  an_array.pop()
+  console.log(an_array)  -> (6) ['Hello', 'zero', 'one', 'two', 'three', 'Bye']
 
+-----------------------------------------------------------------------------------------------------------------------------
 
