@@ -46,3 +46,30 @@ consoole.log(an_array.length) -> 여전히 4이다
 
 배열의 요소를 완벽하게 삭제하려면 배열의 메소드를 활용해야한다 이 부분은 다음 시간에
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+splice 메소드
+
+let an_array = [
+"zero",
+"one",
+"two",
+"three"
+]
+
+an_array.splice(3)
+console.log(an_array) -> "three" 없어짐 lenth도 4에서 1이됨
+
+다른 인덱스 해보자 
+
+let an_array = [
+"zero",
+"one",
+"two",
+"three"
+]
+
+console.log(an_array[1]) -> One
+an_array.splice(1) -> 인덱스 1과 그 이후의 모든 값들을 삭제
+console.log(an_array) -> ['Zero']
+
+splice 메소드에 두번째 패러미터를 넣어주면 삭제할 요소의 개수를 정할 수 있다
