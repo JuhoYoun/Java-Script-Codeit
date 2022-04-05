@@ -269,4 +269,10 @@ for ( let element of an_array ) {
   console.log(element)
 }
 
-배열도 하나의 객체이기 때문에 for in 문을 사용할 수 있긴 하다
+배열도 하나의 객체이기 때문에 for in 문을 사용할 수 있긴 하다 근데 배열에서 프로퍼티 네임은 인덱스이다 
+
+for ( let element in an_array ) {
+  console.log(element)
+}
+
+이렇게 하면 인덱스 0 부터 1, 2, 3 ... 이렇게 인덱스가 출력된다
