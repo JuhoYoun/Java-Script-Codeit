@@ -251,7 +251,7 @@ let an_array = [
   "three"
 ]
 
-for ( i = 0; i < an_array.length; i++) {
+for ( let i = 0; i < an_array.length; i++) {
   console.log(an_array[i])
 }
 
@@ -263,5 +263,9 @@ for ( 변수 of 배열 ) {
 
 for in 문과 비슷한데 for in 에서는 for 뒤의 변수에 프로퍼티 네임이 할당되고 in 뒤에 객체가 있다
 
+맨 위의 코드를 for of 문으로 만들어보자
 
+for ( let element of an_array ) {
+  console.log(element)
+}
 
