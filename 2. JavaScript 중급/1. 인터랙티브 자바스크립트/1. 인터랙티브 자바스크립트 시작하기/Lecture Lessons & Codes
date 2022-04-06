@@ -133,5 +133,12 @@ index.html
 </body>
 </html>  
 
+자 그럼 index.js 로 가서 다음 코드를 써보자 
+
+const myTag1 = document.getElementById('myNumber');
+console.log(myTag1);
+
+그리고 콘솔창을 보면 이렇게 출력된다 -> <div id="myNumber">0</div>
+태그가 출력된것이다
 
 
